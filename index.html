@@ -12,9 +12,9 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      color: #111;
+      color: #fff; /* 文字色を白に変更 */
       /* 背景画像をここに設定 */
-      background-image: url('./lulu-bg.png');
+      background-image: url('./lulu-bg.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -27,7 +27,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.9));
+      /* オーバーレイを白から黒に変更 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
       z-index: -1;
     }
 
@@ -42,7 +43,7 @@
       box-sizing: border-box;
     }
 
-    /* プロフィールアイコン (動画) */
+    /* プロフィールアイコン (動画と画像共通) */
     .profile-icon {
       width: 110px;
       height: 110px;
@@ -59,7 +60,7 @@
       font-weight: 700;
       margin: 0;
       margin-bottom: 20px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
 
     /* SNSアイコンのリスト */
@@ -69,12 +70,12 @@
       margin-bottom: 30px;
     }
     .social-icons a {
-      color: #111;
+      color: #fff; /* アイコンを白に変更 */
       transition: all 0.2s;
     }
     .social-icons a:hover {
       transform: scale(1.15);
-      color: #ec4899; /* ホバー時にピンクに光る */
+      opacity: 0.8;
     }
     .social-icons svg {
       width: 24px;
@@ -98,18 +99,18 @@
       justify-content: space-between;
       align-items: center;
       padding: 16px 20px;
-      background-color: rgba(255,255,255,0.5);
-      border: 1px solid rgba(0,0,0,0.1);
+      background-color: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      color: #111;
+      color: #fff; /* 文字色を白に変更 */
       font-weight: 500;
       text-decoration: none;
       border-radius: 10px;
       transition: all 0.2s ease-in-out;
     }
     .link-button:hover {
-      background-color: rgba(255,255,255,0.8);
+      background-color: rgba(255,255,255,0.2);
       transform: scale(1.02);
     }
     .link-button .arrow {
@@ -138,7 +139,7 @@
   </style>
 </head>
 <body>
-
+  
   <div class="overlay"></div>
 
   <!-- メインコンテンツ -->
