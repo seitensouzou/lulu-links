@@ -6,7 +6,7 @@
   <title>LuLu Links | 晴天想造ENTERTAINMENT.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
   <style>
     /* ページ全体の基本スタイル */
     body {
@@ -14,7 +14,7 @@
       font-family: 'Inter', sans-serif;
       color: #fff; /* 文字色を白に変更 */
       /* 背景画像をここに設定 */
-      background-image: url('./lulu-bg.png');
+      background-image: url('./lulu-bg.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -62,6 +62,50 @@
       margin-bottom: 20px;
       text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
+    
+    .profile-role {
+      font-size: 14px;
+      margin-top: -16px;
+      margin-bottom: 30px;
+      opacity: 0.8;
+    }
+
+    /* ▼▼▼ ここから追加 ▼▼▼ */
+    /* プロフィールカードのグリッド */
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      width: 100%;
+      max-width: 480px;
+      margin-bottom: 30px;
+    }
+
+    /* プロフィールカード */
+    .profile-card {
+      background-color: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: left;
+    }
+
+    .profile-card h5 {
+      font-family: "Noto Serif JP", serif;
+      font-size: 15px;
+      margin: 0 0 6px;
+      opacity: 0.9;
+    }
+    .profile-card p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+    /* ▲▲▲ ここまで追加 ▲▲▲ */
+
 
     /* SNSアイコンのリスト */
     .social-icons {
@@ -148,6 +192,28 @@
     <video autoplay muted loop playsinline src="./lulu_icon.mp4" class="profile-icon"></video>
     
     <p class="profile-handle">@LuLu_Music</p>
+    <p class="profile-role">Vocal / Model</p>
+
+    <!-- ▼▼▼ ここから追加 ▼▼▼ -->
+    <div class="profile-grid">
+      <div class="profile-card">
+        <h5>音楽性</h5>
+        <p>シティポップ×オーガニック（ピアノ／ギター）のハイブリッド</p>
+      </div>
+      <div class="profile-card">
+        <h5>テーマ</h5>
+        <p>愛・希望・平和・誠実、多様性を祝福するCOLORFULなメッセージ</p>
+      </div>
+      <div class="profile-card">
+        <h5>スタイル</h5>
+        <p>アースカラー、シンプル、エレガントなスタイルが好き</p>
+      </div>
+      <div class="profile-card">
+        <h5>パーソナリティ</h5>
+        <p>やさしく、まっすぐ。ときどきお茶目</p>
+      </div>
+    </div>
+    <!-- ▲▲▲ ここまで追加 ▲▲▲ -->
     
     <div class="social-icons">
       <a href="【X(Twitter)のURL】" title="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
